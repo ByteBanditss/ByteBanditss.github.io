@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <title>Login</title>
+    <link rel="icon" type="image/x-icon" href="https://upload.wikimedia.org/wikipedia/commons/c/c9/Tor_Browser_icon.svg"> 
+</head>
+<body>
+    <div class="matrix-rain"></div>
+    <div id="login">
+        <form class="card" onsubmit="validateLogin(event)">
+            <div class="card-header">
+                <h2>Login</h2>
+            </div>
+            <div class="card-content">
+                <div class="card-content-area">
+                    <label for="usuario" c>Usuário</label>
+                    <input type="text" id="usuario" autocomplete="off" required>
+                </div>
+                <div class="card-content-area">
+                    <label for="password" >Senha</label>
+                    <input type="password" id="password" autocomplete="off" required>
+                </div>
+            </div>
+            <div class="card-footer">
+                <button type="submit" value="login" class="submit">Entrar</button>
+            </div>
+            <p id="textInput"></p>
+        </form>
+    </div>
+    <script type="text/javascript" src="assets/js/index.js"></script>
+</body>
+</html>

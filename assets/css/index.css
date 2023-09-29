@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    padding: 0;
+
+    margin: 0;
+
+    overflow: hidden;
+    background: black;
+
+}
+
+.matrix-rain {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    user-select: none;
+    z-index: -1;
+    background-image: url('https://steamuserimages-a.akamaihd.net/ugc/1772697473328379975/8C0ED88CE1C473D8B229CC8A9D0994B208DE211D/?imw=512&&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false'); /* Substitua pelo caminho do seu gif */
+    animation:  5s linear infinite; /* Ajuste a duração conforme necessário */
+}
+
+@keyframes matrixFall {
+    to {
+        transform: translateY(100vh);
+    }
+}
+
+#login {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    height: 100vh;
+    
+
+    font-family: 'Poppins', serif;
+
+}
+
+.card {
+
+    background-color: white;
+
+    padding: 40px;
+
+    border-radius: 2px;
+
+    width:280px;
+    opacity: 80%;
+
+}
+
+.card-header {
+
+    padding-bottom: 50px;
+
+    opacity: 0.8;
+
+    color: black;
+    text-align: center
+
+}
+
+.card-header::after {
+
+    content: "";
+
+    width: 70px;
+
+    height: 1px;
+
+    display: block;
+
+    margin-top: -17px;
+
+    margin-left: -5px;
+
+}
+
+.card-content label {
+
+    color: black;
+
+    font-size: 12px;
+
+    opacity: 0.8;
+
+}
+
+.card-content-area {
+
+    display: flex;
+
+    flex-direction: column;
+
+    padding:10px 0;
+
+}
+
+.card-content-area input {
+
+    margin-top: 10px;
+
+    padding:0 5px;
+
+    background-color: transparent;
+
+    border:none;
+
+    border-bottom: 1px solid #e1e1e1;
+
+    outline: none;
+
+    color: black;
+
+}
+
+.card-footer {
+
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+.card-footer .submit{
+
+    width: 100%;
+
+    height: 40px;
+
+    background-color: black;
+
+    border:none;
+
+    outline: none;
+
+    color: #e1e1e1;
+
+    margin: 10px 0;
+    cursor: pointer;
+
+}
+
+.submit:hover {
+   background-color: transparent;
+   color: black;
+   border:2px solid black;
+}
+
+.card-footer a {
+
+    text-align: center;
+
+    font-size: 12px;
+
+    opacity: 0.8;
+
+    color: black;
+
+    text-decoration: none;
+
+}
+
+
+#textInput {
+    text-align: center;
+    font-size: 13px;
+}
